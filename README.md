@@ -21,7 +21,7 @@ Since the CarDreamer model was initially created and tested based on Linux OS; T
   5. Download the Carla for Linux, version 0.9.15
      a. https://github.com/carla-simulator/carla/releases
      b. unzip the carla to your workspace
-  6. Make sure the CarlaUE4.sh(CarlaUnreal.sh if is latest version) is executable by running the following command:
+  6. Make sure the CarlaUE4.sh is executable by running the following command:
     a. chmod +x /correct/path/to/CarlaUE4.sh
   7. For setup of the environment variable use the following command to find the path:
     a. find ~/CARDREAMER/ -name "CarlaUE4.sh"
@@ -31,13 +31,5 @@ Since the CarDreamer model was initially created and tested based on Linux OS; T
      https://huggingface.co/ucd-dare/CarDreamer/tree/main
 
 ## Important Notice: 
-1. If you are using the Carla latest release, replace steps 5-7 with the following instructions:
-  A. Modify the word CarlaUE4.sh to CarlaUnreal.sh in eval_dm3.sh
-  B. Make sure the CarlaUnreal.sh is executable by running the following command:
-    a. chmod +x /correct/path/to/CarlaUnreal.sh
-  C. For setup of the environment variable use the following command to find the path:
-    a. find ~/CARDREAMER/ -name "CarlaUnreal.sh"
-    b. export CARLA_ROOT="</path/to/carla>"
-    c. export PYTHONPATH="${CARLA_ROOT}/PythonAPI/carla":${PYTHONPATH}
-
-2. If you don't wish to change the original eval_dm3.sh file, but if you still wish to use the latest Carla release, you can download the eval_dm3.sh from this repo and replace it with the one in your CarDreamer folder.
+1. Make sure the right version of CARLA is installed, the latest version does not work very well. 
+2. Download the hugging face checkpoints at the CarDreamer GitHub main page. Use the correct path to the checkpoint.
