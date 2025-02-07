@@ -19,7 +19,7 @@ forward_classification_boundries=[-15,15] #Forward min angle, max angle
 num_clusters=10 #Less clusters -> Wider consideration of moves during concentration; More clusters -> Narrower consideration -> Less moves ignored
 
 #Example waypoint list
-waypoint_list=[(0,0,30),(1,1,32),(2,2,35),(3,3,45),(4,4,45),(5,5,20),(6,6,0),(7,7,-20),(8,8,-40),(9,9,-60),(10,10,-40),(11,11,-20),(12,12,-20),(13,13,0),(14,14,20),(15,15,40),(16,16,60),(17,17,80),(18,18,85),(19,19,85),(20,20,-10),(21,21,-110),(22,22,0),(23,23,-180)]
+#waypoint_list=[(0,0,30),(1,1,32),(2,2,35),(3,3,45),(4,4,45),(5,5,20),(6,6,0),(7,7,-20),(8,8,-40),(9,9,-60),(10,10,-40),(11,11,-20),(12,12,-20),(13,13,0),(14,14,20),(15,15,40),(16,16,60),(17,17,80),(18,18,85),(19,19,85),(20,20,-10),(21,21,-110),(22,22,0),(23,23,-180)]
 
 
 #Note: this might not be exactly how theta is formatted, can be retroactively changed
