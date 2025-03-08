@@ -51,11 +51,19 @@ with open(filename,'r') as file:
             
 import matplotlib.pyplot as plt
 
-x=[x[0] for x in waypoints]
-y=[x[1] for x in waypoints]
+x = [x[0] for x in waypoints]
+y = [x[1] for x in waypoints]
+
 fig, ax = plt.subplots()
-ax.set_aspect('equal',adjustable='box')
-ax.plot(x,y)
+ax.set_aspect('equal', adjustable='box')
+ax.plot(x, y, '-')  # Base line
+for i in range(len(x) - 1):
+  if i%8==0:
+      mid_x=(x[i]+x[i+1])/2
+      mid_y=(y[i]+y[i+1])/2
+      dx = x[i+1]-x[i]
+      dy = y[i+1]-y[i]
+      ax.annotate('', xy=(x[i+1], y[i+1]),xytext=(mid_x,mid_y),arrowprops=dict(arrowstyle='->',color='red',lw=1.5))          
 plt.show()
 writeToFile=(input("Continue? (y/n) ")=="y")
 print(writeToFile)
