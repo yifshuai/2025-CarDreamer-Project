@@ -31,9 +31,9 @@ Since the CarDreamer model was initially created and tested based on Linux OS; T
      https://huggingface.co/ucd-dare/CarDreamer/tree/main
      
 ### Steps to Run the Cascaded CarDreamer AI Model
-1. Make sure you have access to Carla 9.15 and Cardreamer v3 by following the procedure above.
-2. Clone the right checkpoint linked in the CarDreamre Project GitHub page.
-3. Clone this repository; a Linux system is recommended.
+1. Make sure you have access to Carla 9.15 and Cardreamer v3 by following the procedure above. If you are using a Linux workstation, use the procedure in the CarDreamer GitHub page to complete the setup. 
+2. Clone the right checkpoint linked in the HuggingFace; find the link on the CarDreamer GitHub page.
+3. Run Carla using the ./CarlaUE4.sh command, and make sure Carla does not shut down immediately after this command. if this happens, then it could be an indication of insufficient GPU power.
 4. Find the CarDreamer directory, replace the eval_dm3.sh file with the same eval_dm3.sh offered in this project the eval_dm3.sh contains important configuration and setup, so make sure to use the right one.
 5. In your CarDreamer folder, find the common.yaml file, change to map to Town03.
 6. Open a terminal and run the Carla simulator.
@@ -42,8 +42,13 @@ Since the CarDreamer model was initially created and tested based on Linux OS; T
 9. The cascaded CarDreamer AI should start to run now.
 10. The program will prompt you to enter start and end points for the ego vehicle.
 11. Depend on the complexity and map topology, the drive path will be consists with several takeovers, left turns, and right turns. Each of these artifacts corresponds to a CarDreamer task.
+    
 
     
 ## Important Notice: 
-1. Make sure the right version of CARLA is installed, the latest version does not work very well. 
+1. Make sure the right version of CARLA is installed; the latest version does not work very well. 
 2. Download the hugging face checkpoints at the CarDreamer GitHub main page. Use the correct path to the checkpoint.
+3. Before running cardreamer_project.py, make sure you have CARLA running in the background.
+4. The program will shut down once the calculation is finished.
+5. Since we developed this project on a Linux system, a Linux system is recommended for deploying this project.
+
