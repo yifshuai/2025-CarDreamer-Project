@@ -42,6 +42,7 @@ Since the CarDreamer model was initially created and tested based on Linux OS; T
 9. The cascaded CarDreamer AI should start to run now.
 10. The program will prompt you to enter start and end points for the ego vehicle.
 11. Depend on the complexity and map topology, the drive path will be consists with several takeovers, left turns, and right turns. Each of these artifacts corresponds to a CarDreamer task.
+12. After the program is complete, go to your logdir folder and use the tensorboard command to get visual results. For more details, please refer to CarDreamer documentation and Carla 9.15 manual. 
     
 
     
